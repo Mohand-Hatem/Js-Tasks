@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  background-color: #f0f0f0;
+}
+.parent > div {
+  border: 1px solid #777;
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: relative;
+  cursor: pointer;
+}
+.parent > div img {
+  width: 100%;
+}
+.parent > div::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 0%;
+  z-index: 30;
+  background-color: rgba(14, 30, 37, 0.12);
+  transition: 0.1s;
+}
+.parent > div p {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -60%);
+  color: #f2f4f3;
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 50;
+  background-color: #7f4f24;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.parent > div:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+.parent > div:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+.box .box-content {
+  width: 100%;
+  border: 1px solid #7f4f24;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: teal;
+  font-weight: bold;
+  padding: 0;
+}
+
+.box #btn1 {
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #7f4f24;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: none;
+}
+
+.box .inerPrice {
+  font-size: 27px;
+  padding: 0;
+  color: #0c3c57;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
