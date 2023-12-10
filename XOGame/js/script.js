@@ -85,6 +85,16 @@ function CheckSquares() {
     Squares[7].classList.add("active");
     hs.innerHTML = `${Squares[1].innerHTML} is Winner`;
     ReloadAfterWin();
+  } else if (
+    Squares[2].innerHTML === Squares[4].innerHTML &&
+    Squares[4].innerHTML === Squares[6].innerHTML &&
+    Squares[4].innerHTML != ""
+  ) {
+    Squares[2].classList.add("active");
+    Squares[4].classList.add("active");
+    Squares[6].classList.add("active");
+    hs.innerHTML = `${Squares[6].innerHTML} is Winner`;
+    ReloadAfterWin();
   }
 }
 
