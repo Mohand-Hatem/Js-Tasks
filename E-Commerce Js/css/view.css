@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Main-Color: #232323;
+  --Second-Color: #24baef;
+  --Third-Color: rgb(219, 217, 217);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: sans-serif;
+  background-color: white;
+
+  background-color: var(--Main-Color);
+}
+header {
+  background-color: var(--Main-Color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+header nav h2 {
+  color: #fff;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+header nav h2:hover {
+  color: var(--Second-Color);
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .icon {
+  cursor: pointer;
+}
+nav .icon i {
+  font-size: 45px;
+  color: #efefef;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.5s;
+}
+nav .icon:hover i {
+  color: var(--Second-Color);
+}
+header nav ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s linear;
+}
+header nav ul .Logout {
+  margin-left: 30px;
+}
+header nav ul li a:hover {
+  color: var(--Second-Color);
+}
+
+/* ///////////////////////////// Section */
+
+section .container {
+  width: 90%;
+  margin: 50px auto;
+  background-color: darkgrey;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  gap: 15px;
+  position: relative;
+}
+section .TotalPrice {
+  width: 50%;
+  margin: 30px auto;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+section .container .box {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lavender;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+section .container .box .Boxinfo {
+  flex-basis: 49%;
+  text-align: center;
+}
+section .container .box .Boxinfo p {
+  padding: 15px;
+  font-weight: bold;
+}
+section .container .box .Boxpho {
+  flex-basis: 49%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0 5px;
+  background-color: ivory;
+  border-radius: 20px;
+}
+section .container .box .Boxpho img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.cartboxinfo {
+  padding: 5px 0;
+}
+.cartboxinfo .itemlen {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+.cartboxinfo .increse {
+  color: var(--Second-Color);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.cartboxinfo .decrese {
+  color: #ff3232;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.cartboxinfo .decrese:hover {
+  background-color: #ff3232;
+  color: white;
+}
+.cartboxinfo .increse:hover {
+  background-color: var(--Second-Color);
+  color: white;
+}
+
+.rev {
+  margin: 10px;
+  width: 5em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #ff3232;
+  color: lavender;
+  cursor: pointer;
+}
+
+.anime {
+  width: fit-content;
+  margin: 45px auto;
+  font-size: 25px;
+  color: lavender;
+  padding: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.anime::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 2px;
+  background-color: lavender;
+  transition: 1s;
+}
+
+.anime:hover::after {
+  width: 100%;
+  background-color: var(--Second-Color);
+}
+
+/* Heart ////////////////////////// */
+hr {
+  background-color: var(--Second-Color);
+}
+footer {
+  position: relative;
+}
+.heartcontainer {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  background-color: darkgrey;
+  padding: 15px;
+  border-radius: 16px;
+  column-gap: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.left {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  z-index: 1000;
+  font-size: 50px;
+  color: var(--Third-Color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.left:hover,
+.right:hover {
+  color: var(--Second-Color);
+}
+.right {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  z-index: 1000;
+  font-size: 50px;
+  color: var(--Third-Color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.heartbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lavender;
+  flex: 0 0 32%;
+  border-radius: 16px;
+}
+
+.heartpho {
+  flex-basis: 35%;
+}
+.heartinfo {
+  flex-basis: 60%;
+  padding: 5px 20px 20px 20px;
+  position: relative;
+}
+.heartpho img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.heartinfo p,
+.heartinfo span {
+  margin: 15px;
+  font-size: 18px;
+}
+.heartinfo i {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  color: var(--Second-Color);
+  cursor: pointer;
+}

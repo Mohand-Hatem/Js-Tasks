@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="icon">
+          <i class="fas fa-hat-cowboy refresh"></i>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cap">
+        <div class="dot"></div>
+        <h2>Register</h2>
+      </div>
+      <form>
+        <div class="one">
+          <label for="First-Name">First name</label>
+          <input type="text" id="First-Name" required />
+        </div>
+        <!-- ////////////////// -->
+        <div class="two">
+          <label for="Last-Name">Last name</label>
+          <input type="text" id="Last-Name" required />
+        </div>
+        <!-- /////////////// -->
+        <div class="three">
+          <label for="Email">Email</label>
+          <input type="email" required id="Email" />
+          <i class="far fa-times-circle wrong"></i>
+          <i class="far fa-check-circle correct"></i>
+        </div>
+        <!-- /////////////// -->
+        <div class="four">
+          <label for="Pass">Password</label>
+          <input type="password" required id="Pass" />
+          <i class="far fa-times-circle wrong"></i>
+          <i class="far fa-check-circle correct"></i>
+        </div>
+        <button id="btn" type="submit">Submit</button>
+        <p>Have Account ? <a href="./Login.html">Log-in</a></p>
+      </form>
+    </main>
+    <script src="js/register.js"></script>
+  </body>
+</html>

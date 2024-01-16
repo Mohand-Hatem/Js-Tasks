@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/Login.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="icon">
+          <i class="fas fa-hat-cowboy refresh"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="cap">
+        <div class="dot"></div>
+        <h2>LogIn</h2>
+      </div>
+      <form>
+        <!-- /////////////// -->
+        <div class="three">
+          <label for="Email">Email</label>
+          <input type="email" id="Email" required />
+          <i class="far fa-times-circle wrong"></i>
+          <i class="far fa-check-circle correct"></i>
+        </div>
+        <!-- /////////////// -->
+        <div class="four">
+          <label for="Pass">Password</label>
+          <input type="password" id="Pass" required />
+          <i class="far fa-times-circle wrong"></i>
+          <i class="far fa-check-circle correct"></i>
+        </div>
+        <button id="btn" type="submit">Submit</button>
+        <p>Dont Have Account ? <a href="./Register.html"> Register </a></p>
+      </form>
+    </main>
+    <script src="js/Login.js"></script>
+  </body>
+</html>

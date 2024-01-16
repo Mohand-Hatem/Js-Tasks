@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="icon">
+          <i class="fas fa-hat-cowboy refresh"></i>
+        </div>
+        <h2 id="UserWelcome"></h2>
+        <ul>
+          <li><a href="./Login.html" id="TagLog">Log-in</a></li>
+          <li><a href="./Register.html" id="TagReg">Register</a></li>
+          <li class="view"><a href="./View.html">View All Products</a></li>
+          <li id="cartlist">
+            <i id="cart" class="fas fa-shopping-cart">
+              <div id="cartlen">0</div>
+            </i>
+            <div id="cartinfo"></div>
+          </li>
+          <li class="Logout">
+            <a href="Login.html">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search">
+      <select name="" id="SearchType">
+        <option value="0">Search By Catagory</option>
+        <option value="1">Search By Name</option>
+      </select>
+      <input type="text" id="SearchInput" />
+    </div>
+    <section>
+      <div class="container"></div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
